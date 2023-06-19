@@ -1,7 +1,7 @@
 .root {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .app-name {
@@ -12,6 +12,7 @@
 
 .has-gradient-text {
     background: -webkit-linear-gradient(#13f7f4, #2af598);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -43,7 +44,8 @@
     &-columns {
         display: flex;
         flex-grow: 1;
-        column-gap: 50px;
+        flex-wrap: wrap;
+        gap: 50px;
         padding: 50px;
     }
 
@@ -82,6 +84,7 @@
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.05),
         0 3px 14px 2px rgba(0, 0, 0, 0.05);
     background-color: #fff;
+    cursor: move;
 }
 
 .cdk-drag-preview {

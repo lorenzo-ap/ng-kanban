@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700|Lato:400,800,900");
-@import "../node_modules/bulma/bulma.sass";
-
-html,
-body {
-    height: 100%;
-}
+@import "/node_modules/bulma/bulma.sass";
 
 html {
+    overflow-y: auto !important;
+}
+
+body {
     background-image: url("./assets/background.svg");
     background-size: cover;
-    overflow-y: auto !important;
+    background-position: center;
+    background-repeat: no-repeat;
 }

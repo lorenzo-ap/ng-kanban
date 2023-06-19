@@ -9,17 +9,17 @@
 
   <div class="board">
     <div class="board-bar">
-      <p class="board-name">
+      <h2 class="board-name">
         {{ board.name }}
-      </p>
+      </h2>
     </div>
 
     <div class="board-wrapper">
       <div class="board-columns" cdkDropListGroup>
         <div class="board-column" *ngFor="let column of board.columns">
-          <h2 class="column-title">
+          <h3 class="column-title">
             {{ column.name }}
-          </h2>
+          </h3>
 
           <div
             class="tasks-container"

@@ -26,8 +26,8 @@ export class MainViewComponent {
             'build an awesome application',
         ]),
         new Column('Research', [
-            'Lorem ipsum',
-            'foo',
+            'Lorem, ipsum dolor.',
+            'An idea in "Research"',
             "This was in the 'Research' column",
         ]),
         new Column('Todo', [
